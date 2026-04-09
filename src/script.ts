@@ -51,3 +51,11 @@ const findMax = (numbers: number[]): number => {
 
 const myNums = [10, 5, 8, 20, 3];
 console.log("Maximum Number:", findMax(myNums)); 
+
+
+// for greetings 
+const greetingUser = (firstName: string, lastName: string): string => {
+    return `Hello, ${firstName} ${lastName}! Welcome to TypeScript.`;
+};
+
+console.log(greetingUser("Yeasin", "Ahmed")); 
