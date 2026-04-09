@@ -41,3 +41,13 @@ const isPalindrome = (text: string): boolean => {
 
 console.log("Is 'Level' palindrome?:", isPalindrome("Level"));   
 console.log("Is 'Hello' palindrome?:", isPalindrome("Hello"));   
+
+
+// Finding the maximum number
+const findMax = (numbers: number[]): number => {
+    
+    return Math.max(...numbers);
+};
+
+const myNums = [10, 5, 8, 20, 3];
+console.log("Maximum Number:", findMax(myNums)); 
