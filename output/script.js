@@ -14,5 +14,13 @@ const getPositiveNumbers = (numbers) => {
 };
 const inputArr = [1, -5, 10, -2, 4];
 console.log("Positive Numbers:", getPositiveNumbers(inputArr));
+// Palindrome Checker
+const isPalindrome = (text) => {
+    const cleanText = text.toLowerCase();
+    const reversedText = cleanText.split('').reverse().join('');
+    return cleanText === reversedText;
+};
+console.log("Is 'Level' palindrome?:", isPalindrome("Level"));
+console.log("Is 'Hello' palindrome?:", isPalindrome("Hello"));
 export {};
 //# sourceMappingURL=script.js.map
