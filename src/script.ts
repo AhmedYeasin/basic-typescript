@@ -59,3 +59,13 @@ const greetingUser = (firstName: string, lastName: string): string => {
 };
 
 console.log(greetingUser("Yeasin", "Ahmed")); 
+
+
+// get the odd numbers
+const isOdd = (num: number): boolean => {
+
+    return num % 2 !== 0;
+};
+
+console.log("Is 7 odd?:", isOdd(7));   
+console.log("Is 10 odd?:", isOdd(10)); 

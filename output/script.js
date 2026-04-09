@@ -33,5 +33,11 @@ const greetingUser = (firstName, lastName) => {
     return `Hello, ${firstName} ${lastName}! Welcome to TypeScript.`;
 };
 console.log(greetingUser("Yeasin", "Ahmed"));
+// get the odd numbers
+const isOdd = (num) => {
+    return num % 2 !== 0;
+};
+console.log("Is 7 odd?:", isOdd(7));
+console.log("Is 10 odd?:", isOdd(10));
 export {};
 //# sourceMappingURL=script.js.map
