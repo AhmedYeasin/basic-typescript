@@ -58,7 +58,7 @@ const greetingUser = (firstName: string, lastName: string): string => {
     return `Hello, ${firstName} ${lastName}! Welcome to TypeScript.`;
 };
 
-console.log(greetingUser("Yeasin", "Ahmed")); 
+console.log(greetingUser("Ahmed", "Yeasin")); 
 
 
 // get the odd numbers

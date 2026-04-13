@@ -32,7 +32,7 @@ console.log("Maximum Number:", findMax(myNums));
 const greetingUser = (firstName, lastName) => {
     return `Hello, ${firstName} ${lastName}! Welcome to TypeScript.`;
 };
-console.log(greetingUser("Yeasin", "Ahmed"));
+console.log(greetingUser("Ahmed", "Yeasin"));
 // get the odd numbers
 const isOdd = (num) => {
     return num % 2 !== 0;
