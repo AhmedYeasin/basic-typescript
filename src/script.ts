@@ -69,3 +69,35 @@ const isOdd = (num: number): boolean => {
 
 console.log("Is 7 odd?:", isOdd(7));   
 console.log("Is 10 odd?:", isOdd(10)); 
+
+
+// Weekday checker
+enum Days {
+  Saturday,
+  Sunday,
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday
+}
+
+function checkDayType(day: Days): string {
+  if (day === Days.Saturday || day === Days.Friday) {
+    return "Holiday";
+  }
+  return "Workday";
+}
+
+console.log(checkDayType(Days.Friday)); 
+
+
+
+function combine(a: number, b: number): number;
+function combine(a: string, b: string): string;
+function combine(a: any, b: any): any {
+  return a + b;
+}
+
+console.log(combine(10, 20));      
+console.log(combine("Hello ", "JS")); 
