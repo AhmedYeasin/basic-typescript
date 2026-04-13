@@ -125,3 +125,12 @@ function getUserData(id: ID) {
 
 getUserData(101);      
 getUserData("USR-50"); 
+
+
+// generic 
+function wrapInArray<T>(value: T): T[] {
+  return [value];
+}
+
+const numberArray = wrapInArray(5);  
+const stringArray = wrapInArray("TypeScript"); 
