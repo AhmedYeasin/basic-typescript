@@ -92,7 +92,7 @@ function checkDayType(day: Days): string {
 console.log(checkDayType(Days.Friday)); 
 
 
-
+// function overloading
 function combine(a: number, b: number): number;
 function combine(a: string, b: string): string;
 function combine(a: any, b: any): any {
@@ -101,3 +101,16 @@ function combine(a: any, b: any): any {
 
 console.log(combine(10, 20));      
 console.log(combine("Hello ", "JS")); 
+
+
+// random properties
+interface Config {
+  readonly apiKey: string;
+  readonly endpoint: string;
+}
+
+const myConfig: Config = {
+  apiKey: "12345-ABCDE",
+  endpoint: "https://api.example.com"
+};
+
