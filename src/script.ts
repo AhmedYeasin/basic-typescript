@@ -114,3 +114,14 @@ const myConfig: Config = {
   endpoint: "https://api.example.com"
 };
 
+
+// custom type alias
+
+type ID = string | number;
+
+function getUserData(id: ID) {
+  console.log("Fetching data for ID:", id);
+}
+
+getUserData(101);      
+getUserData("USR-50"); 
