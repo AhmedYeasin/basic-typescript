@@ -91,18 +91,6 @@ function checkDayType(day: Days): string {
 
 console.log(checkDayType(Days.Friday)); 
 
-
-// function overloading
-function combine(a: number, b: number): number;
-function combine(a: string, b: string): string;
-function combine(a: any, b: any): any {
-  return a + b;
-}
-
-console.log(combine(10, 20));      
-console.log(combine("Hello ", "JS")); 
-
-
 // random properties
 interface Config {
   readonly apiKey: string;
@@ -134,3 +122,13 @@ function wrapInArray<T>(value: T): T[] {
 
 const numberArray = wrapInArray(5);  
 const stringArray = wrapInArray("TypeScript"); 
+
+
+function combine(a: number, b: number): number;
+function combine(a: string, b: string): string;
+function combine(a: any, b: any): any {
+  return a + b;
+}
+
+console.log(combine(10, 20)); 
+console.log(combine("Hello ", "JS"));
