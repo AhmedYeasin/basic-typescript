@@ -25,7 +25,7 @@ const getPositiveNumbers = (numbers: number[]): number[] => {
 };
 
 
-const inputArr = [1, -5, 10, -2, 4];
+const inputArr = [1, -7, 8, 10, 2, -4];
 console.log("Positive Numbers:", getPositiveNumbers(inputArr)); 
 
 
