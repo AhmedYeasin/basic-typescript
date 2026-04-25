@@ -49,7 +49,7 @@ const findMax = (numbers: number[]): number => {
     return Math.max(...numbers);
 };
 
-const myNums = [10, 5, 8, 20, 3];
+const myNums = [8, 3, 6, 21, 9];
 console.log("Maximum Number:", findMax(myNums)); 
 
 
@@ -58,7 +58,7 @@ const greetingUser = (firstName: string, lastName: string): string => {
     return `Hello, ${firstName} ${lastName}! Welcome to TypeScript.`;
 };
 
-console.log(greetingUser("Ahmed", "Yeasin")); 
+console.log(greetingUser("Yeasin", "Ramadan")); 
 
 
 // get the odd numbers
@@ -67,8 +67,8 @@ const isOdd = (num: number): boolean => {
     return num % 2 !== 0;
 };
 
-console.log("Is 7 odd?:", isOdd(7));   
-console.log("Is 10 odd?:", isOdd(10)); 
+console.log("Is 8 odd?:", isOdd(8));   
+console.log("Is 4 odd?:", isOdd(4)); 
 
 
 // Weekday checker
@@ -89,7 +89,7 @@ function checkDayType(day: Days): string {
   return "Workday";
 }
 
-console.log(checkDayType(Days.Friday)); 
+console.log(checkDayType(Days.Monday)); 
 
 // random properties
 interface Config {
