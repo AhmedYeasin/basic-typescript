@@ -12,9 +12,9 @@ const getActiveUserNames = (users: User[]): string[] => {
 
 
 const users: User[] = [
-    { id: 1, name: "Yeasin", isActive: true },
-    { id: 2, name: "John", isActive: false },
-    { id: 3, name: "Sakib", isActive: true }
+    { id: 1, name: "Joseph", isActive: true },
+    { id: 2, name: "John", isActive: true },
+    { id: 3, name: "Leon", isActive: false}
 ];
 
 console.log("Active Users:", getActiveUserNames(users)); 
