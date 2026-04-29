@@ -67,3 +67,16 @@ function handleResponse(response: ApiResponse) {
 }
 
 handleResponse({ status: "success", data: "User list loaded" });
+
+
+// Async Funtions and Promises
+
+async function fetchData(): Promise<string> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("সার্ভার থেকে ডেটা পাওয়া গেছে!");
+    }, 2000);
+  });
+}
+
+fetchData().then(data => console.log(data));
