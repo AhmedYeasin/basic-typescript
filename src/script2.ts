@@ -48,3 +48,22 @@ function updateUser(user: UserProfile, updates: Partial<UserProfile>): UserProfi
 const currentProfile: UserProfile = { id: 1, name: "Yeasin", bio: "Developer" };
 
 const updatedProfile = updateUser(currentProfile, { bio: "Senior MERN Stack Developer" });
+
+console.log(updatedProfile);
+
+
+// Discriminated Unions (Patter Matching)
+
+type ApiResponse = 
+  | { status: "success"; data: string }
+  | { status: "error"; message: string };
+
+function handleResponse(response: ApiResponse) {
+  if (response.status === "success") {
+    console.log("Data received:", response.data);
+  } else {
+    console.log("Error occurred:", response.message);
+  }
+}
+
+handleResponse({ status: "success", data: "User list loaded" });
