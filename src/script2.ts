@@ -74,7 +74,7 @@ handleResponse({ status: "success", data: "User list loaded" });
 async function fetchData(): Promise<string> {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve("সার্ভার থেকে ডেটা পাওয়া গেছে!");
+      resolve("Data fetched from server");
     }, 2000);
   });
 }
