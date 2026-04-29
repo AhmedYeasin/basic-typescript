@@ -32,3 +32,19 @@ function getCarProperty(car: Car, key: keyof Car) {
 const myCar: Car = { brand: "Toyota", model: "Corolla", year: 2022 };
 
 console.log(getCarProperty(myCar, "brand"));
+
+// Utility Types
+
+interface UserProfile {
+  id: number;
+  name: string;
+  bio: string;
+}
+
+function updateUser(user: UserProfile, updates: Partial<UserProfile>): UserProfile {
+  return { ...user, ...updates };
+}
+
+const currentProfile: UserProfile = { id: 1, name: "Yeasin", bio: "Developer" };
+
+const updatedProfile = updateUser(currentProfile, { bio: "Senior MERN Stack Developer" });
